@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHANLAL RAVI | Producer & Artist</title>
+    <meta name="description" content="Mohanlal Ravi - Modern trap music producer and artist. Original sound and unique productions.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="alternate icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">MOHANLAL RAVI</div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#music">MUSIC</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Scroll indikatörü -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-note">♪</div>
+            <div class="floating-note">♫</div>
+            <div class="floating-note">♬</div>
+        </div>
+        <div class="wave-animation"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="artist-info">
+                    <h1 style="opacity: 1; transform: translate(-7.20312px, -1.46209px); transition: 1.2s cubic-bezier(0.34, 1.56, 0.64, 1); text-shadow: -4.802083333333334px -0.9747292418772568px 30px var(--accent-light),
+                    4.802083333333334px 0.9747292418772568px 30px var(--accent);">Mohanlal Ravi</h1>
+                    <p>Artist, Music Producer</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/UCxY4o1w7J4T70tNW4UAQzeQ" target="_blank" class="youtube-link">
+                            <i class="fab fa-youtube"></i>
+                            <span class="tooltip">YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/guvez_m/" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                        <a href="https://on.soundcloud.com/DK1TiaeVPuVBf3QZA" target="_blank" class="soundcloud-link">
+                            <i class="fab fa-soundcloud"></i>
+                            <span class="tooltip">SoundCloud</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="latest-track">
+                    <span class="tag">LATEST RELEASE</span>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Latest Release" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero section'a 3D katmanlar ekleyelim -->
+    <div class="hero-layers">
+        <div class="layer" data-speed="0.1"></div>
+        <div class="layer" data-speed="0.2"></div>
+        <div class="layer" data-speed="0.3"></div>
+    </div>
+
+    <!-- Müzik dalgası için canvas ekleyelim -->
+    <canvas id="waveCanvas"></canvas>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-note">♪</div>
+            <div class="floating-note">♫</div>
+        </div>
+        <div class="wave-animation"></div>
+        <h2>MUSIC</h2>
+        <div class="music-container">
+            <div class="track-list">
+                <div class="track">
+                    <div class="track-inner">
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Music Track 1" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <div class="track-inner">
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Music Track 2" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-note">♬</div>
+            <div class="floating-note">♪</div>
+        </div>
+        <div class="wave-animation"></div>
+        <h2>ABOUT</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Mohanlal Ravi stands out as an artist who charts his own course in the music world and manages all production processes single-handedly. Discovering his interest in music during his childhood, he has been honing his skills as a producer for about 6-7 years. In his music career, drawing inspiration from international rap artists like Juice WRLD, Lil Uzi Vert, and Young Thug, as well as local artists such as Khontkar, Lil Zey, and BEGE, he has developed his unique sound in the instrumental trap genre.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="animated-background">
+            <div class="floating-element" data-speed="1"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-note">♫</div>
+            <div class="floating-note">♬</div>
+        </div>
+        <div class="wave-animation"></div>
+        <h2>İLETİŞİM</h2>
+        <div class="contact-content">
+            <a href="mailto:prodbyguvez@gmail.com" class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                prodbyguvez@gmail.com
+            </a>
+            <div class="social-links">
+                <a href="https://www.instagram.com/guvez_m/" target="_blank" class="instagram-link">
+                    <i class="fab fa-instagram"></i>
+                    <span class="tooltip">Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCxY4o1w7J4T70tNW4UAQzeQ" target="_blank" class="youtube-link">
+                    <i class="fab fa-youtube"></i>
+                    <span class="tooltip">YouTube</span>
+                </a>
+                <a href="https://on.soundcloud.com/DK1TiaeVPuVBf3QZA" target="_blank" class="soundcloud-link">
+                    <i class="fab fa-soundcloud"></i>
+                    <span class="tooltip">SoundCloud</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GUVEZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
